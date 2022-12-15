@@ -1,0 +1,30 @@
+
+.container {
+    display:grid;
+    padding: 20px;
+    grid-template-columns: 1fr 2fr;
+}
+
+.elementos {
+    background-color: aquamarine;
+    border:solid 1px black
+}
+.principal {
+    background-color: azure;
+    border:solid 1px black
+}
+
+@media (max-width: 690px) {
+    .container {
+        display: grid;
+        padding: 20px;
+        grid-template-columns: repeat(1,auto);
+    }
+    
+    .ul-elementos{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        
+    }
+}
